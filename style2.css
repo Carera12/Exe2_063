@@ -1,0 +1,92 @@
+.container {
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #000;
+    background: linear-gradient(to bottom, #000, #800080, #FF69B4);
+    animation: gradientAnimation 5s linear infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    color: #fff;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="radio"],
+  label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+ 
+  h3 {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #000;
+    color: #000;
+    background-color: #FFC0CB;
+    animation: borderAnimation 3s linear infinite;
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      border-color: #000;
+      background-color: #FFC0CB;
+    }
+    50% {
+      border-color: #FFC0CB;
+      background-color: #000;
+    }
+    100% {
+      border-color: #000;
+      background-color: #FFC0CB;
+    }
+  }
+  
+  
+  
+  
+    

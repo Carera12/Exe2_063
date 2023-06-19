@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>PAGE 2 FORM DOM</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Pemesanan Tiket Konser JISOO SOLO STAGE</h3>
+        </div>
+        <form action="">
+            <label for="nama">Nama Pemesan : </label><br>
+            <input type="text" placeholder="Nama anda" id="nama" required><br><br>
+            <label for="email">Email ; </label><br>
+            <input type="text" placeholder="Email anda" id="email" required><br>
+            <label for="nohp">Nomor Handphone : </label><br>
+            <input type="text" placeholder="Nomor Handphone anda" id="nohp" required><br>
+            <label for="tanggal">Tanggal : </label><br>
+            <input type="date" id="tanggal"><br><br>
+            <label for="zona">Pilih Kursi:</label><br>
+            <select id="zona">
+                <option value="vip">VIP 5.000.000</option>
+                <option value="platinum">PLATINUM 4.400.000</option>
+                <option value="cat1">GOLD 3.900.000</option>
+                <option value="cat1">SILVER 3.600.000</option>
+                <option value="cat1">BRONZE IDR 3.100.000</option>
+            </select><br>
+            <p>Pilihan Jumlah Tiket : </p>
+            <input type="radio" name="day" id="day1" value="day1">
+            <label for="day1">Tiket - 1</label><br>
+            <input type="radio" name="day" id="day2" value="day2">
+            <label for="day2">Tiket - 2</label><br><br>
+            <input type="radio" name="day" id="day1" value="day1">
+            <label for="day1">Tiket - 3</label><br>
+            <input type="radio" name="day" id="day2" value="day2">
+            <label for="day2">Tiket - 4</label><br><br>
+            <input type="radio" name="day" id="day1" value="day1">
+            <label for="day1">Tiket - 5</label><br>
+            <label for="">Alamat Pemesan: </label><br>
+            <textarea placeholder="Tulis Alamatmu Disini" name="alamat" id="alamat" cols="30"
+                rows="5"></textarea><br><br>
+
+            <button onclick="window.location.href='index.html'"> CANCEL</button>
+            <button type="submit" onclick="kirimData()">SEND </button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
