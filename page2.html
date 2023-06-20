@@ -3,52 +3,56 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
-    <title>PAGE 2 FORM DOM</title>
+    <title>DOM Javascript</title>
 </head>
 
 <body>
     <div class="container">
         <div class="header">
-            <h3>Pemesanan Tiket Konser JISOO SOLO STAGE</h3>
+            <h3>Pemesanan Tiket Jisoo</h3>
         </div>
-        <form action="">
-            <label for="nama">Nama Pemesan : </label><br>
-            <input type="text" placeholder="Nama anda" id="nama" required><br><br>
-            <label for="email">Email ; </label><br>
-            <input type="text" placeholder="Email anda" id="email" required><br>
-            <label for="nohp">Nomor Handphone : </label><br>
-            <input type="text" placeholder="Nomor Handphone anda" id="nohp" required><br>
-            <label for="tanggal">Tanggal : </label><br>
-            <input type="date" id="tanggal"><br><br>
-            <label for="zona">Pilih Kursi:</label><br>
-            <select id="zona">
-                <option value="vip">VIP 5.000.000</option>
-                <option value="platinum">PLATINUM 4.400.000</option>
-                <option value="cat1">GOLD 3.900.000</option>
-                <option value="cat1">SILVER 3.600.000</option>
-                <option value="cat1">BRONZE IDR 3.100.000</option>
-            </select><br>
-            <p>Pilihan Jumlah Tiket : </p>
-            <input type="radio" name="day" id="day1" value="day1">
-            <label for="day1">Tiket - 1</label><br>
-            <input type="radio" name="day" id="day2" value="day2">
-            <label for="day2">Tiket - 2</label><br><br>
-            <input type="radio" name="day" id="day1" value="day1">
-            <label for="day1">Tiket - 3</label><br>
-            <input type="radio" name="day" id="day2" value="day2">
-            <label for="day2">Tiket - 4</label><br><br>
-            <input type="radio" name="day" id="day1" value="day1">
-            <label for="day1">Tiket - 5</label><br>
-            <label for="">Alamat Pemesan: </label><br>
-            <textarea placeholder="Tulis Alamatmu Disini" name="alamat" id="alamat" cols="30"
-                rows="5"></textarea><br><br>
 
-            <button onclick="window.location.href='index.html'"> CANCEL</button>
-            <button type="submit" onclick="kirimData()">SEND </button>
+        <form action="">
+            <label for="nama">Nama</label><br>
+            <input type="text" placeholder="Nama anda" id="nama"><br>
+
+            <label for="tanggal">Tanggal</label><br>
+            <input class="date" type="date" name="tanggal" id="tanggal"><br><br>
+
+            <label for="album">Pilih Jumlah Tiket</label><br>
+            <select name="album" id="album">
+                <option value="tiket1">Tiket - 1</option>
+                <option value="tiket2">Tiket - 2</option>
+                <option value="tiket3">Tiket - 3</option>
+                <option value="tiket4">Tiket - 4</option>
+            </select><br><br>
+
+            <div class="box">
+                <p>Harga Tiket:</p>
+                <input type="radio" name="peminatan" id="jaemin" value="jaemin">
+                <label for="programming">Platinum : 4.000.000</label> <br>
+                <input type="radio" name="peminatan" id="mark" value="mark">
+                <label for="programming">Gold : 3.000.000</label> <br>
+                <input type="radio" name="peminatan" id="haechan" value="haechan">
+                <label for="programming">Silver : 2.000.000</label><br>
+                <input type="radio" name="peminatan" id="renjun" value="renjun">
+                <label for="programming">Bronze : 1.000.000</label><br>
+                <input type="radio" name="peminatan" id="jeno" value="jeno">
+                <label for="programming">VIP : 5.000.000</label><br>
+            </div>
+
+            <label for="">Alamat</label><br>
+            <textarea placeholder="Tulis alasan mu disini" name="alasan" id="alasan" cols="30"
+                rows="3"></textarea><br><br>
+
+            <button type="submit" onclick="kirimData()">Kirim</button>
         </form>
     </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
